@@ -28,7 +28,7 @@ Year 9 students spend more time on their screens daily then reading a book weekl
 
 * The data presented by the system shouldn't be 100% relied on as there may be errors - the system should be able to inform the user about that.
 
-# Use-Case
+### Use-Case
 
 * Actor - the user
 
@@ -58,3 +58,17 @@ Year 9 students spend more time on their screens daily then reading a book weekl
 * User has viewed the data in the form they requested.
 
 * Data remains available for future observation by other users via the program.
+
+## Research and Planning
+
+### Secondary Research
+
+* Approximately 91% of teenagers between 14 and 17 owned a mobile phone in 2023 according to [Charles Sturt University](https://news.csu.edu.au/opinion/91-per-cent-of-australian-teens-have-a-phone-but-many-are-not-secure).
+
+* In 2021/2022, over 90% of children had at least one hour of screen time weekly, with 24% of those children spending at least 20 hours per week on their screens, according to [the Australian Bureau of Statistics](https://www.abs.gov.au/statistics/people/people-and-communities/cultural-and-creative-activities/2021-22).
+
+### Discussion
+
+### Acquiraton of Data
+
+### Data Dictionary
