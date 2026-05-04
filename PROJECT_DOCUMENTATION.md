@@ -67,7 +67,13 @@ Year 9 students spend more time on their screens daily then reading a book weekl
 
 * In 2021/2022, over 90% of children had at least one hour of screen time weekly, with 24% of those children spending at least 20 hours per week on their screens, according to [the Australian Bureau of Statistics](https://www.abs.gov.au/statistics/people/people-and-communities/cultural-and-creative-activities/2021-22).
 
+* 3 in 10 students in Years 7-12 don't read in their spare time, according to [Deakin University](https://www.deakin.edu.au/about-deakin/news-and-media-releases/articles/surprising-facts-about-aussie-teens-reading-habits-revealed)
+
+* The proportion of children aged 6-17 who read for pleasure has dropped from 37% to 28%, according to [the University of Southern Queensland (USQ)](https://www.unisq.edu.au/news/2025/11/the-conversation-childrens-booker-prize)
+
 ### Discussion
+
+Nationwide, my hypothesis is most likely correct, as phone usage by teenagers/children has grown while the amount of reading for pleasure has decreased.
 
 ### Acquiraton of Data
 
