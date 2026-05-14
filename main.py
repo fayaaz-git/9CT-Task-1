@@ -1,4 +1,8 @@
 import os
+import pandas as pd
+import matplotlib.pyplot as plt
+from data_module import written_comparison, comparison_df
+
 
 def cls():
     os.system('cls' if os.name == 'nt' else 'clear')
@@ -21,6 +25,7 @@ def interface():
             input("Press enter to continue, please.")
             cls()
             interface()
+        
         elif choice == "2":
             cls()
             print("Exiting program...")
