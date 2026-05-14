@@ -7,15 +7,13 @@ def interface():
     while True:
         print("(=== Data Viewer Interface ===)\n")
 
-        print("1. View written dataset")
-        print("2. View visualisation of data")
-        print("3. View specific datasets")
-        print("4. Exit the program")
-        print("5. Edit specific data [AUTHORISED PERSONEL ONLY!]")
-        print("6. Save changes [AUTHORISED PERSONEL ONLY!]")
+        print("1. View a dataset")
+        print("2. Exit the program")
+        print("3. Edit specific data [AUTHORISED PERSONEL ONLY!]")
+        print("4. Save changes [AUTHORISED PERSONEL ONLY!]")
         print()
 
-        choice = input("Please choose one of the following options (1-6), please.\n")
+        choice = input("Please choose one of the following options (1-4), please.\n")
 
         if choice == "1":
             cls()
@@ -25,27 +23,15 @@ def interface():
             interface()
         elif choice == "2":
             cls()
-            print("Visualisation\n")
-            input("Press enter to continue, please.")
-            cls()
-            interface()
-        elif choice == "3":
-            cls()
-            print("Specific Dataset\n")
-            input("Press enter to continue, please.")
-            cls()
-            interface()
-        elif choice == "4":
-            cls()
             print("Exiting program...")
             break
-        elif choice == "5":
+        elif choice == "3":
             cls()
             print("Edited\n")
             input("Press enter to continue, please.")
             cls()
             interface()
-        elif choice == "6":
+        elif choice == "4":
             cls()
             print("Saved\n")
             input("Press enter to continue, please.")
