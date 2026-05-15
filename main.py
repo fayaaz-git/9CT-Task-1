@@ -51,6 +51,22 @@ def dataset():                                                                  
             cls()
             print("ERROR!\n")
             input("Press enter to continue...")
+    
+    elif rep_choice == "2":
+        cls()
+        print("DATASET VIEWER\n")
+
+        print("Choose your visual:")
+        print("1. Comparison Between Daily Phone and Weekly Book Usage")
+        print("2. Last Time Subjects Read Books")
+        print("3. Most Common Reasons for Not Reading Books\n")
+
+        data_choice = input("Please choose one of the following options (1-4).\n")
+
+        if data_choice == "1":
+            cls()
+            visual_comparison()
+            input("Press enter to continue...")
 
 def interface():
     while True:
