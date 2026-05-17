@@ -1,7 +1,7 @@
 import os                                                                                                   # Imports OS
 import pandas as pd                                                                                         # Imports Pandas (should be in data module but just in case)
 import matplotlib.pyplot as plt                                                                             # Imports Matplotlib (should be in data module but just in case)
-from data_module import *      # Imports everything from data module
+from data_module import *                                                                                   # Imports everything from data module
 
 
 def cls():
@@ -65,7 +65,6 @@ def dataset():                                                                  
 
         if data_choice == "1":
             cls()
-            visual_comparison()
             input("Press enter to continue...")
 
 def interface():

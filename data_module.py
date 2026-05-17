@@ -32,15 +32,10 @@ def reasons():
 def written_comparison():
     print(comparison_df)
 
-correct_order = [
-                "> 1 hour",
-                "1 - 2 hours",
-                "2 - 4 hours",
-                "4 - 8 hours",
-                "8+ hours (phone) / 8 - 16 hours (book)",
-                "16+ hours (book)"
-]
+def visual_reasons(reasons_df):
+    x = reasons_df['Most Common Reasons for Disuse of Books']
+    y = reasons_df['People Who Said Yes']
+    plt.bar(x, y)
+    plt.show()
 
-def visual_comparison(comparison_df):
-    plt.plot(comparison_df["Amount people who spend this amount of time on..."], comparison_df["Their phone (daily)"], label="Daily Phone Usage", marker="o")
-    plt.plot(comparison_df["Amount people who spend this amount of time on..."], comparison_df["A book (weekly, in spare time)"], label="Weekly Book Usage", marker="o")
+visual_reasons(reasons_df)
