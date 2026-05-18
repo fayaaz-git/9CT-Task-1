@@ -64,23 +64,69 @@ def edit_df():
 
     df_choice = input("Please choose one of the following options (1-4).\n")
 
-    if df_choice == "2":
+    if df_choice == "1":
         cls()
-        print("What data would you like to change?\n")
+        comparison_w_df = pd.read_csv(
+             "data/phone_book_w.csv",
+             header=0)
+        print(f"{comparison_df}\n")
+        column_choice = int(input("Choose the column whose dataset value you would like to change (1-2)? "))
+        final_choice = int(input("Choose the row whose dataset value you would like to change (0-5)\n"))
+        data_input = int(input("Write the new value here: "))
+        comparison_df.iloc[final_choice, column_choice] = data_input
+        comparison_w_df.iloc[final_choice, column_choice] = data_input
+        cls()
+        print(f"{comparison_df}")
+        save_choice = input("Do you want to save (yes/no)?\n")
+        if save_choice.lower() == "yes":
+            comparison_df.to_csv("data/phone_and_book_comparison.csv", index=False, header=False)
+            comparison_w_df.to_csv("data/phone_book_w.csv", index=False, header=True)
+            input("Saved. Press enter to continue...")
+        elif save_choice.lower() == "no":
+            input("Press enter to continue...")
+        cls()
 
-        print("1. Change a data value")
-        print("2. Add a new row")
-        print("3. Add a new column\n")
+    elif df_choice == "2":
+        cls()
+        last_w_df = pd.read_csv(
+             "data/last_book_w.csv",
+             header=0)
+        print(f"{last_book_df}\n")
+        final_choice = int(input("Choose the row whose dataset value you would like to change (0-4)\n"))
+        data_input = input("Write the new value here: ")
+        last_book_df.iloc[final_choice, 1] = data_input
+        last_w_df.iloc[final_choice, 1] = data_input
+        cls()
+        print(f"{last_book_df}")
+        save_choice = input("Do you want to save (yes/no)?\n")
 
-        change_choice = input("Please choose one of the following options (1-3).\n")
+        if save_choice.lower() == "yes":
+            last_book_df.to_csv("data/last_book_time.csv", index=False, header=False)
+            last_w_df.to_csv("data/last_book_w.csv", index=False, header=True)
+            input("Saved. Press enter to continue...")
+        elif save_choice.lower() == "no":
+            input("Press enter to continue...")
+        cls()
+    
+    elif df_choice == "3":
+        cls()
+        reasons_w_df = pd.read_csv(
+             "data/reasons_w.csv",
+             header=0)
+        cls()
+        print(f"{reasons_df}\n")
+        final_choice = int(input("Choose the row whose dataset value you would like to change (0-7)\n"))
+        data_input = input("Write the new value here: ")
+        reasons_df.iloc[final_choice, 1] = data_input
+        reasons_w_df.iloc[final_choice, 1] = data_input
+        cls()
+        print(f"{reasons_df}")
+        save_choice = input("Do you want to save (yes/no)?\n")
 
-        if change_choice == "1":
-            cls()
-            print(f"{last_book_df}\n")
-            final_choice = input("Choose the row whose dataset value you would like to change\n")
-            data_input = input("Write the new value here: ")
-            last_book_df.iloc[int(final_choice), 1] = int(data_input)
-            cls()
-            print(f"{last_book_df}")
-            input("Press enter to continue... ")
-            cls()
+        if save_choice.lower() == "yes":
+            reasons_df.to_csv("data/subject_reasons.csv", index=False, header=False)
+            reasons_w_df.to_csv("data/reasons_w.csv", index=False, header=True)
+            input("Saved. Press enter to continue...")
+        elif save_choice.lower() == "no":
+            input("Press enter to continue...")
+        cls()

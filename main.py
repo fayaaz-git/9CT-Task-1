@@ -93,10 +93,9 @@ def interface():
 
         print("1. View a dataset")
         print("2. Exit the program")
-        print("3. Edit specific data [WARNING: LONG AND TEDIOUS PROCESS!]")
-        print("4. Save changes [!]\n")
+        print("3. Edit a data value\n")
 
-        choice = input("Please choose one of the following options (1-4).\n")
+        choice = input("Please choose one of the following options (1-3).\n")
 
         if choice == "1":
             cls()
@@ -112,12 +111,6 @@ def interface():
         elif choice == "3":
             cls()
             edit_df()
-            interface()
-        elif choice == "4":
-            cls()
-            print("Saved\n")
-            input("Press enter to continue, please.")
-            cls()
             interface()
         else:
             cls()
