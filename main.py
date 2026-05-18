@@ -93,8 +93,8 @@ def interface():
 
         print("1. View a dataset")
         print("2. Exit the program")
-        print("3. Edit specific data [AUTHORISED PERSONEL ONLY!]")
-        print("4. Save changes [AUTHORISED PERSONEL ONLY!]\n")
+        print("3. Edit specific data [WARNING: LONG AND TEDIOUS PROCESS!]")
+        print("4. Save changes [!]\n")
 
         choice = input("Please choose one of the following options (1-4).\n")
 
@@ -107,12 +107,11 @@ def interface():
         elif choice == "2":
             kill_interface()
             break
+            break
 
         elif choice == "3":
             cls()
-            print("Edited\n")
-            input("Press enter to continue, please.")
-            cls()
+            edit_df()
             interface()
         elif choice == "4":
             cls()
