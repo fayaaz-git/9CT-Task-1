@@ -24,7 +24,9 @@ def written_complete():
     print(complete_df)
 
 def written_last():
-    print(last_book_df)
+    print(pd.read_csv(
+                    "data/last_book_w.csv",
+                    header=None))
 
 def reasons():
     print(reasons_df)
@@ -32,10 +34,15 @@ def reasons():
 def written_comparison():
     print(comparison_df)
 
-def visual_reasons(reasons_df):
-    x = reasons_df['Most Common Reasons for Disuse of Books']
-    y = reasons_df['People Who Said Yes']
-    plt.bar(x, y)
+def visual_reasons():
+    plt.bar(reasons_df[0], reasons_df[1], width=0.3,)
     plt.show()
 
-visual_reasons(reasons_df)
+def visual_last():
+    plt.bar(last_book_df[0], last_book_df[1], width=0.3)
+    plt.show()
+
+def visual_comparison():
+    plt.plot(comparison_df[0], comparison_df[1])
+    plt.plot(comparison_df[0], comparison_df[2])
+    plt.show()

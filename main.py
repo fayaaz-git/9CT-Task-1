@@ -7,6 +7,10 @@ from data_module import *                                                       
 def cls():
     os.system('cls' if os.name == 'nt' else 'clear')                                                        # Makes a function to clear everything in terminal if triggered
 
+def kill_interface():
+    cls()
+    print("Exiting Dataviewer...")
+
 def dataset():                                                                                              # Function that allows specific datasets to be displayed in certain ways if triggered
     print("DATASET VIEWER\n")
 
@@ -65,6 +69,22 @@ def dataset():                                                                  
 
         if data_choice == "1":
             cls()
+            visual_comparison()
+            input("Press enter to continue...")
+        
+        elif data_choice == "2":
+            cls()
+            visual_last()
+            input("Press enter to continue...")
+        
+        elif data_choice == "3":
+            cls()
+            visual_reasons()
+            input("Press enter to continue...")
+
+        else:
+            cls()
+            print("ERROR!\n")
             input("Press enter to continue...")
 
 def interface():
@@ -85,9 +105,9 @@ def interface():
             interface()
         
         elif choice == "2":
-            cls()
-            print("Exiting program...")
+            kill_interface()
             break
+
         elif choice == "3":
             cls()
             print("Edited\n")
@@ -107,4 +127,6 @@ def interface():
             cls()
 
 cls()
-interface()
+
+if __name__ == "__main__":
+    interface()
