@@ -130,3 +130,21 @@ def edit_df():
         elif save_choice.lower() == "no":
             input("Press enter to continue...")
         cls()
+
+    elif df_choice == "4":
+        cls()
+        print(f"{complete_df}\n")
+        column_choice = int(input(f"Choose the column whose dataset value you would like to change (0 - 4)? "))
+        final_choice = int(input(f"Choose the row whose dataset value you would like to change (0 - {len(complete_df) - 1})\n"))
+        data_input = input("Write the new value here: ")
+        complete_df.iloc[final_choice, column_choice] = data_input
+        cls()
+        print(f"{complete_df}")
+        save_choice = input("Do you want to save (yes/no)?\n")
+        if save_choice.lower() == "yes":
+            complete_df.to_csv("data/phone_and_book.csv", index=False, header=True)
+            input("Saved. Press enter to continue...")
+        elif save_choice.lower() == "no":
+            input("Press enter to continue...")
+        cls()
+        
