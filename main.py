@@ -105,7 +105,7 @@ def interface():
         
         elif choice == "2":
             kill_interface()
-            break
+            cls()
             break
 
         elif choice == "3":
