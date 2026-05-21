@@ -107,3 +107,34 @@ Note that this dictionary is for the main dataset and not for the other smaller 
 The data analysis interface works perfectly as far as I am concerned. In the interface, people can view data as either a pure, written dataset or a visual representation, as well as being able to edit data if such data is innacurate. There are a few problems with the interface, for instance when trying to exit the interface, you would have to press the key that allows you to exit the interface two or more times for it to actually exit, and the visualisations would often have the x-axis labels stamped on top of each other in a way that makes it hard to read the aforementioned values. Despite this, the overall functionability and usability of the interface still works extremely well.
 
 The data analysis also clearly proves my hypothesis - that GHS students spend more time on their phones in a day than reading a book weekly. In fact, the results garnered concerning time spent reading books in free time weekly was extremely pitiful - with 21 of the 46 responses spending less than an hour a week reading a book, compared to the 31 subjects who spent 1 - 4 hours on their phone daily. The most common reasons subjects don't spend time reading books is easy to guess - people just use other forms of entertainment, thus strengthening the truthfullness of hypothesis.
+
+### Peer Verification
+
+1. Ronav
+
+    * P: Programme menu is functional, easy to navigate and user friendly. Time spent on books and phone is effectively represented as a graph, making it easy for user to visualise the data, and is also able to be viewed as a dataset.
+
+    * M: For some of the graphs, there is no legend and the x axis is also merging, so text is not very clear.
+
+    * I:  While on some of the graphs, the x and y axis is not very clear, and lacks a legend, it is able to execute commands and able to effectively visualise data as a graph or just as a ata set.
+
+2. Alfonso
+
+    * P:
+    Easy to navigate interface, allowing the user to access information easily without overwhelming them.
+    The ability to edit the dataset is a cool and neat feature, making the user feel like their fully interacting with the program instead of just looking at information.
+
+
+    * M:
+    Fix x axis on graphs (fix by changing rotation). 
+    Make the editing system a loop in the case when someone adds an improper value it just loops back.
+
+    * I: Overall, the interface works extremely well it flows nicely without overwhelimng the view. The negatives are only small mistakes that can be easily fixed, apart from those it is a successful interface allowing the user to edit and access the data ste.
+
+3. Brandon
+
+    * P: Menu is clean, easy to navigate and includes a lot of extensive research on the chosen topic. The program includes a wide range of different graphs which helps the user to understand and extend their knowledge in a visual manner. Being able to edit, save and change data in the program really helps users to feel emersed and play around with the data given.
+
+    * M: The graphs varied with some of them not having a legend and the x axis needs a bit of work
+
+    * I: Overall, the program works efficiently, clean, and flows nicely with a wide range of information on the chosen topic. The only issue is the graphs otherwise the program with succesfully.

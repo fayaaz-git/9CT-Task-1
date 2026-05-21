@@ -40,6 +40,7 @@ def written_comparison():
 
 def visual_reasons():
     plt.bar(reasons_df[0], reasons_df[1], width=0.2,)
+    plt.xticks(rotation=45)
     plt.show()
 
 def visual_last():
@@ -49,6 +50,8 @@ def visual_last():
 def visual_comparison():
     plt.plot(comparison_df[0], comparison_df[1])
     plt.plot(comparison_df[0], comparison_df[2])
+    plt.xticks(rotation=45)
+    plt.legend()
     plt.show()
 
 def edit_df():
