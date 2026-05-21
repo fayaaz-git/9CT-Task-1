@@ -4,6 +4,8 @@
 
 ### Mind Map
 
+![Image of My Mind Map](images/Screenshot%202026-05-21%20at%206.44.47 pm.png)
+
 ### HYPOTHESIS
 
 GHS students spend more time on their screens daily then reading a book weekly.
@@ -12,9 +14,7 @@ GHS students spend more time on their screens daily then reading a book weekly.
 
 * The code would be able to load in files such as .csv files, and should be able to handle errors in file loading.
 
-* The data system should be able to filter, sort, or group data if requested.
-
-* The system should be able to find the mean and range of certain groups of data in the dataset.
+* The inteface should be able to edit and save data back into the .csv file/s if prompted by the user.
 
 * The data would be visualised as either a Pandas dataframe or a Matplotlib bar/line graph depending on the user's preference.
 
@@ -138,3 +138,13 @@ The data analysis also clearly proves my hypothesis - that GHS students spend mo
     * M: The graphs varied with some of them not having a legend and the x axis needs a bit of work
 
     * I: Overall, the program works efficiently, clean, and flows nicely with a wide range of information on the chosen topic. The only issue is the graphs otherwise the program with succesfully.
+
+### Final Evaluation
+
+* My interface meets all functional and non-functional requirements, with the user being able to view, edit, and save data through the interface, and the interface plus the README file making the interface as user-friendly as possible.
+
+* Based off of the peer feedback, the interface is user friendly and achieves its main goal - to display data as accurately and clearly as possible, hampered by only a few flaws in visualisation displays, which I have responded to by trying to fix these problems with varying levels of success.
+
+* In terms of project management, I have spent as much time as possible outside and inside of school on this project, using GitHub to my advantage to regain access to code I had written in school on my PC.
+
+* The data is somewhat unreliable, since it - being generated from a survey, after all - only represents a fraction of the population of students in GHS. I also have reasonable suspicion that one of the respondents to my survey (one of my friends) may have answered dishonestly and thus the results from the dataset may be untrustable. I believe the UX is as accessible as possible, with instructions being clear from the moment one uses the interface, and the README file covers all other information that isn't conveyed on the interface.
